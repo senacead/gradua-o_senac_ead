@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Avaliação - Graduação Senac EAD</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones para navegação -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BOTÃO MENU HAMBÚRGUER (APENAS PARA TELAS MENORES/MOBILE) -->
+    <button class="menu-toggle" aria-label="Abrir Menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- BARRA LATERAL FIXA (SIDEBAR) -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <!-- Imagem do Logo anexada -->
+            <img src="logo_senac_01.png" alt="Logo Senac" class="logo-img">
+            <span class="sub-logo">Graduação EAD</span>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Início</a></li>
+                
+                <!-- Menu Colapsável: Processos -->
+                <li class="nav-item-collapsible">
+                    <button class="collapse-btn">
+                        <span><i class="fas fa-sync-alt"></i> Processos</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <ul class="collapse-menu">
+                        <li><a href="#sistema-avaliacao">Sistema de Avaliação Senac EAD</a></li>
+                        <li><a href="#prova-facil">Sistema de Avaliação / Prova Fácil (Tratados/Não Tratados)</a></li>
+                    </ul>
+                </li>
+
+                <!-- Menu Colapsável: Coordenações -->
+                <li class="nav-item-collapsible">
+                    <button class="collapse-btn">
+                        <span><i class="fas fa-users"></i> Coordenações</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <ul class="collapse-menu">
+                        <li><a href="#coord-graduacao">Graduação</a></li>
+                        <li><a href="#coord-cursos">Cursos e Professores</a></li>
+                        <li><a href="#coord-polos">Polos</a></li>
+                        <li><a href="#coord-tutoria">Tutoria</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#pontos-atencao" class="nav-link"><i class="fas fa-exclamation-triangle"></i> Pontos de Atenção</a></li>
+                <li><a href="#conclusao" class="nav-link btn-solicitacoes"><i class="fas fa-paper-plane"></i> Conclusão / Solicitações</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- ÁREA DE CONTEÚDO PRINCIPAL (DESLOCADA PARA A DIREITA) -->
+    <main class="main-content">
+        
+        <!-- SEÇÃO: HOME -->
+        <section id="home" class="section-hero">
+            <div class="hero-container">
+                <h1>Sistema de Avaliação da Graduação Senac EAD</h1>
+                <p>Portal unificado para acompanhamento de processos, parametrizações da Prova Fácil, alinhamento entre coordenações e melhorias contínuas do Senac EAD.</p>
+                <a href="#sistema-avaliacao" class="btn-primary">Explorar Processos</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: SISTEMA DE AVALIAÇÃO -->
+        <section id="sistema-avaliacao" class="section-padding">
+            <div class="container">
+                <h2>Processo: Sistema de Avaliação Senac EAD</h2>
+                <p>Em andamento....</p>
+                <div class="card-placeholder">Insira aqui o descritivo ou fluxo geral das avaliações...</div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: PROVA FÁCIL (COM ABAS INTERATIVAS) -->
+        <section id="prova-facil" class="section-padding bg-light">
+            <div class="container">
+                <h2>Processo: Sistema de Avaliação / Prova Fácil</h2>
+                <p class="subtitle">Acompanhamento da transição e operação das avaliações na plataforma.</p>
+                
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="tratados">Pontos Tratados</button>
+                        <button class="tab-btn" data-tab="nao-tratados">Pontos Não Tratados</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="tab-tratados">
+                        <h3>✅ Pontos Tratados</h3>
+                        <p>Funcionalidades homologadas, integrações concluídas com sucesso e fluxos já operacionais no sistema Prova Fácil.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="tab-nao-tratados">
+                        <h3>❌ Pontos Não Tratados</h3>
+                        <p>Gaps identificados, demandas pendentes de desenvolvimento ou processos que necessitam de intervenção manual temporária.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: COORDENAÇÕES -->
+        <section id="coordenacoes" class="section-padding">
+            <div class="container">
+                <h2>Gestão e Coordenações</h2>
+                <div class="grid-coordenacoes">
+                    <div class="card" id="coord-graduacao">
+                        <h3><i class="fas fa-graduation-cap"></i> Coordenação de Graduação</h3>
+                        <p>Diretrizes institucionais, aprovação de calendários macros e políticas de avaliação.</p>
+                    </div>
+                    <div class="card" id="coord-cursos">
+                        <h3><i class="fas fa-book"></i> Coordenação de Cursos / Professores</h3>
+                        <p>Alocação de bancos de questões, revisões de conteúdo e validação de notas por banca.</p>
+                    </div>
+                    <div class="card" id="coord-polos">
+                        <h3><i class="fas fa-map-marker-alt"></i> Coordenação de Polos</h3>
+                        <p>Infraestrutura para exames (quando aplicável), suporte ao aluno presencialmente e contingências locais.</p>
+                    </div>
+                    <div class="card" id="coord-tutoria">
+                        <h3><i class="fas fa-comments"></i> Coordenação de Tutoria</h3>
+                        <p>Mediação de dúvidas pedagógicas, feedback contínuo e suporte direto no ambiente virtual.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: PONTOS DE ATENÇÃO -->
+        <section id="pontos-atencao" class="section-padding bg-light">
+            <div class="container">
+                <div class="alert-box">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Pontos de Atenção</h2>
+                    <p>Em andamento.....</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: CONCLUSÃO E SOLICITAÇÕES -->
+        <section id="conclusao" class="section-padding">
+            <div class="container">
+                <h2>Conclusão (Solicitações)</h2>
+                <p>Em andamento......</p>
+                <div class="card-placeholder">Formulário ou lista de chamados/solicitações pendentes...</div>
+            </div>
+        </section>
+
+        <!-- RODAPÉ -->
+        <footer class="footer">
+            <p>&copy; 2026 Senac EAD</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
