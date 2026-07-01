@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- RESPONSIVIDADE SIDEBAR (MOBILE TOGGLE) ---
+    // --- RESPONSIVIDADE SIDEBAR ---
     const menuToggle = document.querySelector('.menu-toggle');
     const sidebar = document.querySelector('.sidebar');
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Fecha a barra lateral ao clicar fora dela (no mobile)
+    // Fecha a barra lateral ao clicar fora dela.
     document.addEventListener('click', (e) => {
         if (window.innerWidth <= 992) {
             if (!sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
